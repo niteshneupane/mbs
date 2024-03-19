@@ -18,8 +18,6 @@ class HomePage extends StatelessWidget {
     return const BasePage(
       childrens: [
         Placeholder(),
-        Placeholder(),
-        Placeholder(),
         Text("--"),
       ],
     );

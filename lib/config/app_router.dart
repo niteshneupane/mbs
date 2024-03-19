@@ -7,6 +7,7 @@ class AppRouter {
     initialLocation: SplashPage.routeName,
     routes: [
       SplashPage.route(),
+      HomePage.route(),
     ],
     errorBuilder: (context, state) {
       return const Scaffold(

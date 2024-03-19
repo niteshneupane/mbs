@@ -25,5 +25,12 @@ class AppTheme {
         foregroundColor: Colors.white,
       ),
     ),
+    textTheme: const TextTheme(
+      titleMedium: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
+        color: AppColors.fontGray,
+      ),
+    ),
   );
 }
