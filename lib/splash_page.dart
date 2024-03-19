@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mbs/features/home/screens/home_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -17,6 +18,21 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
+  initApp() {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        context.push(HomePage.routeName);
+      },
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initApp();
+  }
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
