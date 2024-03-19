@@ -22,6 +22,6 @@ flutter:
     - assets/images/
 
   fonts:
-    - family: Poppins
+    - family: Raleway
       fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Raleway-Regular.ttf

@@ -14,7 +14,7 @@ class AppTheme {
       backgroundColor: Colors.white,
     ),
     scaffoldBackgroundColor: Colors.white,
-    fontFamily: "Poppins",
+    fontFamily: "Raleway",
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: AppColors.primary,
       foregroundColor: Colors.white,
