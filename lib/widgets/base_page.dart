@@ -10,6 +10,7 @@ class BasePage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
+          const NavBar(),
           ...childrens,
           const FooterWidget(),
         ],

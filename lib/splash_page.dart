@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mbs/features/home/screens/home_page.dart';
 
+import 'config/config.dart';
+
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
@@ -35,9 +37,12 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Splash Page"),
+        child: Image.asset(
+          AssetPath.logo,
+          height: 80,
+        ),
       ),
     );
   }

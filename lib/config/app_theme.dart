@@ -23,12 +23,27 @@ class AppTheme {
       style: FilledButton.styleFrom(
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6.0),
+        ),
+        textStyle: const TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
       ),
     ),
     textTheme: const TextTheme(
       titleMedium: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w600,
+        color: AppColors.fontGray,
+      ),
+      displayLarge: TextStyle(
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        color: AppColors.fontGray,
+      ),
+      bodySmall: TextStyle(
+        fontSize: 10,
         color: AppColors.fontGray,
       ),
     ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mbs/features/features.dart';
+import 'package:mbs/features/home/widgets/about_us_section.dart';
 import 'package:mbs/widgets/base_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,8 +19,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const BasePage(
       childrens: [
-        Placeholder(),
-        Text("--"),
+        BannerSection(),
+        InfoSection(),
+        AboutUsSection(),
+        SuccessBanner(),
       ],
     );
   }
