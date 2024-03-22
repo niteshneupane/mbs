@@ -23,6 +23,10 @@ class HomePage extends StatelessWidget {
         InfoSection(),
         AboutUsSection(),
         SuccessBanner(),
+        OurInstructor(),
+        Testimonial(),
+        OurGallery(),
+        ContactForm(),
       ],
     );
   }
