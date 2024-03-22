@@ -7,6 +7,7 @@ import 'package:iconify_flutter_plus/icons/ion.dart';
 import 'package:iconify_flutter_plus/icons/material_symbols.dart';
 import 'package:iconify_flutter_plus/icons/mdi.dart';
 import 'package:mbs/config/app_colors.dart';
+import 'package:mbs/features/auth/auth.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({super.key});
@@ -47,7 +48,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
             ),
           ),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              context.pop();
+              context.push(RegisterPage.routeName);
+            },
             leading: const Iconify(
               Ion.person_circle_sharp,
               size: 46,

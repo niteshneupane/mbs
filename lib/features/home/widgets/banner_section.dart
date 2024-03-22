@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:mbs/config/config.dart';
+import 'package:mbs/features/features.dart';
 
 class BannerSection extends StatelessWidget {
   const BannerSection({super.key});
@@ -32,7 +34,9 @@ class BannerSection extends StatelessWidget {
                 height: 35,
               ),
               FilledButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.push(RegisterPage.routeName);
+                },
                 child: const Text("Register"),
               ),
             ],
