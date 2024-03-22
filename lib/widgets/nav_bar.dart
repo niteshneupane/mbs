@@ -15,7 +15,16 @@ class NavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset(AssetPath.logo),
-          const Iconify(Mdi.menu),
+          Builder(builder: (ctx) {
+            return IconButton(
+              onPressed: () {
+                Scaffold.of(ctx).openEndDrawer();
+              },
+              icon: const Iconify(
+                Mdi.menu,
+              ),
+            );
+          }),
         ],
       ),
     );

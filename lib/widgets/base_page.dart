@@ -8,6 +8,7 @@ class BasePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: const CustomDrawer(),
       body: ListView(
         children: [
           const NavBar(),
