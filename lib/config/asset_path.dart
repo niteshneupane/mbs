@@ -17,4 +17,6 @@ class AssetPath {
   static const String meditating = "$_imagePath/meditating.jfif";
   static const String manandher = "$_imagePath/manandher.png";
   static const String homeContact = "$_imagePath/home-contact.png";
+
+  static String gallaryImage(int index) => "$_imagePath/g${index + 1}.png";
 }
