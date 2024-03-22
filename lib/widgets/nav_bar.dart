@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconify_flutter_plus/iconify_flutter_plus.dart';
 import 'package:iconify_flutter_plus/icons/cil.dart';
-import 'package:iconify_flutter_plus/icons/mdi.dart';
 import 'package:mbs/config/config.dart';
 
 class NavBar extends StatelessWidget {
